@@ -8,11 +8,27 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
+@import url('./section.css');
+/* @import url('./animations.css'); */
+
+/* Pages style */
+@import url('./cookies-policy.css');
+@import url('./privacy-policy.css');
+@import url('./terms-and-conditions.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+
+@import url('./hero.css');
+@import url('./about-the-game.css');
+@import url('./how-to-play.css');
+@import url('./key-features.css');
+@import url('./merge-rewards.css');
+@import url('./storyline.css');
+@import url('./characters.css');
+@import url('./offline-experience.css');
+@import url('./level-progression.css');
+@import url('./player-testimonials.css');
+@import url('./download-now.css');
+
 @import url('./footer.css');
