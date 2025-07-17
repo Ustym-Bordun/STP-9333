@@ -1,0 +1,11 @@
+/* Styles for Mobile devices */
+.section {
+  padding: 20px 0;
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .section {
+    padding: 50px 0;
+  }
+}
