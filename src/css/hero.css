@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
 
-  background-image: url(../img/hero/iPhone-12-Pro.png),
-    url(../img/hero/iPhone-12-Pro2.png);
+  background-image: url(/img/hero/iPhone-12-Pro.png),
+    url(/img/hero/iPhone-12-Pro2.png);
   background-repeat: no-repeat;
   background-position: 16px 145px, 130px 178px;
   background-size: 175px 263px;
@@ -19,8 +19,8 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .container-hero {
-    background-image: url(../img/hero/iPhone-12-Pro-x2.png),
-      url(../img/hero/iPhone-12-Pro2-x2.png);
+    background-image: url(/img/hero/iPhone-12-Pro-x2.png),
+      url(/img/hero/iPhone-12-Pro2-x2.png);
   }
 }
 
@@ -106,8 +106,8 @@
   }
 
   .container-hero {
-    background-image: url(../img/hero/desktop/iPhone-12-Pro2-desktop.png),
-      url(../img/hero/desktop/iPhone-12-Pro-desktop.png);
+    background-image: url(/img/hero/desktop/iPhone-12-Pro2-desktop.png),
+      url(/img/hero/desktop/iPhone-12-Pro-desktop.png);
     background-repeat: no-repeat;
     background-position: 845px 60px, 640px -25px;
     background-size: 355px 525px;
@@ -117,8 +117,8 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .container-hero {
-      background-image: url(../img/hero/desktop/iPhone-12-Pro2-desktop-x2.png),
-        url(../img/hero/desktop/iPhone-12-Pro-desktop-x2.png);
+      background-image: url(/img/hero/desktop/iPhone-12-Pro2-desktop-x2.png),
+        url(/img/hero/desktop/iPhone-12-Pro-desktop-x2.png);
     }
   }
 
