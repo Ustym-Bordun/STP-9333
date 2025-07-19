@@ -1,0 +1,122 @@
+/* .how-to-play-wrapper {
+  background-color: #57ac30;
+} */
+
+.how-to-play-container {
+  background-image: url(/img/how-to-play/how-to-play.png);
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  background-size: 320px 511px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .how-to-play-container {
+    background-image: url(/img/how-to-play/how-to-play-x2.png);
+  }
+}
+
+.how-to-play-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 559px;
+}
+
+.how-to-play-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-bottom: 16px;
+}
+
+.how-to-play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.how-to-play-item {
+  font-size: 20px;
+  line-height: 1.75;
+
+  position: relative;
+  padding-left: 44px;
+}
+
+.how-to-play-item::before {
+  content: '0' counter(item);
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 36px;
+  height: 36px;
+  line-height: 1.9;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.how-to-play-list {
+  counter-reset: item;
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 1200px) {
+  .how-to-play-container {
+    background-image: url(/img/how-to-play/desktop/how-to-play-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px 608px;
+
+    padding-top: 107px;
+    padding-bottom: 107px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .how-to-play-container {
+      background-image: url(/img/how-to-play/desktop/how-to-play-desktop-x2.png);
+    }
+  }
+
+  .how-to-play-title {
+    color: var(--text-light-color);
+    font-size: 36px;
+    line-height: 0.8;
+
+    margin-bottom: 40px;
+  }
+
+  .how-to-play-subtitle {
+    color: var(--text-light-color);
+    font-size: 24px;
+    line-height: 1.5;
+
+    margin-bottom: 24px;
+  }
+
+  .how-to-play-item {
+    color: var(--text-light-color);
+
+    position: relative;
+    padding-left: 48px;
+  }
+
+  .how-to-play-item::before {
+    border-color: var(--text-light-color);
+    font-size: 20px;
+
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
