@@ -1,0 +1,103 @@
+.about-the-game-section {
+  padding-top: 40px;
+}
+
+.about-the-game-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 24px;
+}
+
+.about-the-game-sub-title {
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-bottom: 16px;
+}
+
+.about-the-game-text {
+  margin-bottom: 16px;
+}
+
+.about-the-game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.about-the-game-item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-the-game-image {
+  height: 193px;
+}
+
+.about-the-game-swip-wrapper.about-the-game-swiper-one {
+  overflow: hidden;
+}
+
+.about-the-game-swiper-pagination {
+  text-align: center;
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 1200px) {
+  .about-the-game-section {
+    padding-top: 100px;
+  }
+
+  .about-the-game-title {
+    font-size: 36px;
+    line-height: 0.8;
+
+    margin-bottom: 40px;
+  }
+
+  .about-the-game-sub-title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .about-the-game-text {
+    font-size: 20px;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .about-the-game-list {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .about-the-game-item-text {
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  .about-the-game-image {
+    height: 269px;
+  }
+
+  /* SWIPER */
+
+  .about-the-game-swip-wrapper.about-the-game-swiper-one {
+    overflow: visible;
+  }
+
+  .about-the-game-item.swiper-slide {
+    flex-shrink: unset;
+    width: unset;
+  }
+
+  .about-the-game-list-image {
+    gap: 20px;
+    margin-bottom: 0;
+  }
+}
