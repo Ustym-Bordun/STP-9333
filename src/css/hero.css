@@ -1,0 +1,170 @@
+.hero {
+  background: linear-gradient(269deg, #fff 0%, #608c11 100%);
+
+  padding: 15px 0 18px 0;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(/img/hero/iPhone-12-Pro.png),
+    url(/img/hero/iPhone-12-Pro2.png);
+  background-repeat: no-repeat;
+  background-position: 16px 145px, 130px 178px;
+  background-size: 175px 263px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .container-hero {
+    background-image: url(/img/hero/iPhone-12-Pro-x2.png),
+      url(/img/hero/iPhone-12-Pro2-x2.png);
+  }
+}
+
+.main-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 319px;
+}
+
+.first-image {
+  padding-bottom: 30px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.google-play-link {
+  order: 1;
+}
+
+.link-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+
+  border-radius: 16px;
+  background: #8e44ad;
+  margin-bottom: 24px;
+}
+
+.link-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-light-color);
+
+  text-shadow: 3px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.link-img {
+  height: 31px;
+}
+
+.order-wrapper {
+  order: 2;
+}
+
+.sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 24px;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+
+  margin-bottom: 16px;
+}
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding: 46px 0 69px 0;
+  }
+
+  .container-hero {
+    background-image: url(/img/hero/desktop/iPhone-12-Pro2-desktop.png),
+      url(/img/hero/desktop/iPhone-12-Pro-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 845px 60px, 640px -25px;
+    background-size: 355px 525px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container-hero {
+      background-image: url(/img/hero/desktop/iPhone-12-Pro2-desktop-x2.png),
+        url(/img/hero/desktop/iPhone-12-Pro-desktop-x2.png);
+    }
+  }
+
+  .main-title {
+    font-size: 64px;
+    line-height: 1.17;
+
+    width: 645px;
+    margin-bottom: 46px;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    line-height: 0.8;
+  }
+
+  .google-play-link {
+    order: 2;
+  }
+
+  .order-wrapper {
+    order: 1;
+  }
+
+  .text {
+    width: 645px;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+
+  .list-wrapper {
+    margin-bottom: 32px;
+  }
+  .item-text {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .link-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 26px;
+  }
+
+  .link-text {
+    font-size: 24px;
+  }
+}
