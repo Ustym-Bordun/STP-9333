@@ -1,7 +1,7 @@
 .hero {
   background: linear-gradient(269deg, #fff 0%, #608c11 100%);
 
-  padding: 15px 0 18px 0;
+  padding: 62px 0 18px 0;
 }
 
 .container-hero {
@@ -110,7 +110,7 @@
 
 @media only screen and (min-width: 1200px) {
   .hero {
-    padding: 46px 0 69px 0;
+    padding: 113px 0 69px 0;
   }
 
   .container-hero {
