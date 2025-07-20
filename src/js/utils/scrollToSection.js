@@ -15,13 +15,13 @@ const smoothScrollTo = element => {
   // const offset = headerHeight; // динамічне значення
   const offset = element.id !== 'hero' ? headerHeight : 0; // динамічне значення
 
-  console.log('Ширина вікна: ', window.innerWidth);
-  console.log('Висота хедеру: ', headerHeight);
-  console.log('Потрібна різниця проскролу: ', offset);
-  console.log('Довжина проскролу: ', element.offsetTop - offset);
+  // console.log('Ширина вікна: ', window.innerWidth);
+  // console.log('Висота хедеру: ', headerHeight);
+  // console.log('Потрібна різниця проскролу: ', offset);
+  // console.log('Довжина проскролу: ', element.offsetTop - offset);
 
-  console.dir(element);
-  console.log('Ід елементу:', element.id);
+  // console.dir(element);
+  // console.log('Ід елементу:', element.id);
 
   window.scrollTo({
     top: element.offsetTop - offset,
@@ -37,9 +37,9 @@ export const scrollToSection = element => {
 
     const targetElement = document.getElementById(targetId);
 
-    console.log(targetId);
-    console.dir(targetElement);
-    console.log(targetElement);
+    // console.log(targetId);
+    // console.dir(targetElement);
+    // console.log(targetElement);
 
     if (targetElement) {
       // console.log(1);
