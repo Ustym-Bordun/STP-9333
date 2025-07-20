@@ -20,17 +20,23 @@ new Swiper('.key-features-swiper-one', {
   pagination: {
     el: '.key-features-swiper-pagination',
     clickable: true,
+    enabled: true,
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
-      navigation: false,
+      navigation: {
+        enabled: false,
+      },
     },
     1200: {
       slidesPerView: 3,
       centeredSlides: true,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
       navigation: {
+        enabled: true,
         nextEl: '.key-features-swiper-next',
         prevEl: '.key-features-swiper-prev',
       },
