@@ -1,1 +1,151 @@
-<p>header</p>
+<header class="header" data-header>
+  <div class="container">
+    <div class="header-wrapper">
+      <a class="logo-link" href="/">
+        <!-- <a class="logo-link" href="#"> -->
+        <img
+          class="logo"
+          srcset="
+            ./img/logo/logo-mobile.png  50w,
+            ./img/logo/logo-desktop.png 75w
+          "
+          sizes="(max-width: 1199px) 50px, 75px"
+          alt="logo"
+          src="./img/logo/logo-mobile.png"
+        />
+      </a>
+
+      <button
+        class="open-menu-btn"
+        data-modalMenuAction="open"
+        aria-label="Open menu"
+      >
+        <svg class="open-menu-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-open-menu"></use>
+        </svg>
+      </button>
+
+      <button
+        class="close-menu-btn"
+        data-modalMenuAction="close"
+        aria-label="Close menu"
+      >
+        <svg class="close-menu-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#hero" data-header-navigation-link>
+              Home
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#about-the-game"
+              data-header-navigation-link
+            >
+              About
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#how-to-play"
+              data-header-navigation-link
+            >
+              How to Play
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#key-features"
+              data-header-navigation-link
+            >
+              Features
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#merge-rewards"
+              data-header-navigation-link
+            >
+              Merge Rewards
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#storyline"
+              data-header-navigation-link
+            >
+              The Story
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#characters"
+              data-header-navigation-link
+            >
+              Characters
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#offline-experience"
+              data-header-navigation-link
+            >
+              Offline Experience
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#level-progression"
+              data-header-navigation-link
+            >
+              Levels
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#player-testimonials"
+              data-header-navigation-link
+            >
+              Testimonials
+            </a>
+          </li>
+
+          <!-- ? -->
+          <!-- <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#download-now"
+              data-header-navigation-link
+            >
+              Download
+            </a>
+          </li> -->
+
+          <li class="header-nav-item">
+            <a
+              class="header-nav-link"
+              href="#contact-and-support"
+              data-header-navigation-link
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
