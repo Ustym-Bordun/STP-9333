@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
 
-  padding: 3.5px 0;
+  padding: 8.5px 0;
 }
 
 .logo-link {
@@ -63,6 +63,10 @@ body[data-bodyMenu='closed'] .close-menu-btn {
 }
 
 @media only screen and (min-width: 1200px) {
+  .header-wrapper {
+    padding: 5px 0;
+  }
+
   .logo-link {
     width: 75px;
   }
