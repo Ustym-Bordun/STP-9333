@@ -1,0 +1,83 @@
+.cookies-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.cookies-second-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cookies-main-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.cookies-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cookies-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cookies-span {
+  font-weight: 400;
+}
+
+.cookies-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cookies-link {
+  text-decoration: underline;
+}
+
+.cookies-list {
+  list-style: disc;
+  padding-left: 16px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cookies-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .link-back {
+    margin-bottom: 40px;
+  }
+
+  .cookies-main-title {
+    font-size: 32px;
+    line-height: 1;
+
+    margin-bottom: 40px;
+  }
+
+  .cookies-subtitle {
+    font-size: 24px;
+  }
+
+  .cookies-text {
+    font-size: 20px;
+  }
+
+  .cookies-list {
+    font-size: 20px;
+  }
+
+  .link-email {
+    font-size: 20px;
+  }
+  .contact-wrapper {
+    display: flex;
+    gap: 7px;
+  }
+}

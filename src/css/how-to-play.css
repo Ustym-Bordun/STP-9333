@@ -1,6 +1,14 @@
-/* .how-to-play-wrapper {
-  background-color: #57ac30;
-} */
+.how-to-play-wrapper {
+  background-image: linear-gradient(
+    180deg,
+    #98b63b 0%,
+    #5e9929 40.87%,
+    rgba(67, 140, 32, 0.92) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  background-size: 1199px 511px;
+}
 
 .how-to-play-container {
   background-image: url(/img/how-to-play/how-to-play.png);
@@ -69,11 +77,15 @@
 /* DESKTOP STYLES */
 
 @media only screen and (min-width: 1200px) {
+  .how-to-play-wrapper {
+    background-position: unset;
+    background-size: 2000px 608px;
+  }
   .how-to-play-container {
     background-image: url(/img/how-to-play/desktop/how-to-play-desktop.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1200px 608px;
+    background-position: center right;
+    background-size: 580px 608px;
 
     padding-top: 107px;
     padding-bottom: 107px;
@@ -107,6 +119,8 @@
     color: var(--text-light-color);
 
     position: relative;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
     padding-left: 48px;
   }
 
