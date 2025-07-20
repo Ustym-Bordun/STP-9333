@@ -30,5 +30,10 @@
 @import url('./level-progression.css');
 @import url('./player-testimonials.css');
 @import url('./download-now.css');
+@import url('./contact-and-support.css');
 
 @import url('./footer.css');
+
+/* Modals style */
+@import url('./modal-menu.css');
+@import url('./modal-cookies-policy.css');
