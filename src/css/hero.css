@@ -54,8 +54,16 @@
   padding: 8px;
 
   border-radius: 16px;
-  background: #8e44ad;
+  background: var(--button-color);
   margin-bottom: 24px;
+}
+
+.link-wrapper:hover {
+  border: 1px solid #0f0f0f;
+}
+
+.link-wrapper:active {
+  border: 1px solid #0f0f0f;
 }
 
 .link-text {
