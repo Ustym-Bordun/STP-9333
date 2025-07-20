@@ -87,6 +87,11 @@
 
   /* SWIPER */
 
+  .about-the-game-swiper-pagination {
+    display: none;
+    text-align: center;
+  }
+
   .about-the-game-swip-wrapper.about-the-game-swiper-one {
     overflow: visible;
   }
