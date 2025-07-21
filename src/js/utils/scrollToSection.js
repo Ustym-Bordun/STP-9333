@@ -1,4 +1,4 @@
-import { onClose } from './on-open-or-close-modal-menu.js';
+import { closeModalMenu } from './open-or-close-modal-menu.js';
 
 const getHeaderHeight = () => {
   return window.innerWidth >= 1200 ? 70 : 57;
@@ -31,7 +31,7 @@ const smoothScrollTo = element => {
 
 export const scrollToSection = element => {
   element.addEventListener('click', e => {
-    e.preventDefault(); // Перехоплюємо поведінку за замовчуванням
+    e.preventDefault();
 
     const targetId = element.getAttribute('href').substring(1);
 
@@ -42,7 +42,6 @@ export const scrollToSection = element => {
     // console.log(targetElement);
 
     if (targetElement) {
-      // console.log(1);
       smoothScrollTo(targetElement);
     }
   });
@@ -50,18 +49,19 @@ export const scrollToSection = element => {
 
 export const closeModalAndScrollToSection = element => {
   element.addEventListener('click', e => {
-    e.preventDefault(); // Перехоплюємо поведінку за замовчуванням
+    e.preventDefault();
 
     const targetId = element.getAttribute('href').substring(1);
 
     const targetElement = document.getElementById(targetId);
 
     // console.log(targetId);
+    // console.dir(targetElement);
     // console.log(targetElement);
 
     if (targetElement) {
-      // console.log(1);
-      onClose();
+      closeModalMenu();
+
       setTimeout(() => {
         smoothScrollTo(targetElement);
       }, 300);

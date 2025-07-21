@@ -22,6 +22,20 @@
   gap: 8px;
 
   text-align: center;
+
+  line-height: 1.88;
+}
+
+.footer-link {
+  transition: transform 300ms ease-in-out;
+}
+
+.footer-link.hover,
+.footer-link:focus {
+  transform: scale(0.95);
+}
+.footer-link.active {
+  transform: scale(0.9);
 }
 
 .right-border {

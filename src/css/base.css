@@ -10,14 +10,46 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --text-black-color: #0f0f0f;
   --text-light-color: #fdfdfd;
+  --text-dark-color: #0f0f0f;
 
   --bg-color: #ffffff;
   --bg-color-second: #608c11;
 
-  --button-color: #8e44ad;
-  --button-bg-color: ##e5e5e5;
+  --bg-btn-color: #8e44ad;
+  --bg-btn-color-second: #d1d1d1;
+  --bg-btn-color-third: #e5e5e5;
+
+  --bg-header-nav-link-color-hover-focus: rgba(255, 255, 255, 0.12);
+  --bg-header-nav-link-color-active: rgba(255, 255, 255, 0.35);
+
+  --border-btn-modal-menu-color-hover-focus: rgba(98, 141, 17, 0.5);
+  --border-btn-modal-menu-color-active: rgb(98, 141, 17);
+
+  --border-btn-light-color-hover-focus: rgba(253, 253, 253, 0.5);
+  --border-btn-light-color-active: rgb(253, 253, 253);
+  --border-btn-dark-color-hover-focus: rgba(2, 2, 2, 0.5);
+  --border-btn-dark-color-active: rgb(2, 2, 2);
+
+  --shadow-color: rgba(0, 0, 0, 0.3);
+
+  --text-shadow: 0 2px 4px var(--shadow-color);
+  --box-shadow: 2px 1px 6px 0 var(--shadow-color);
+
+  --scrollbar-track-color: rgba(0, 0, 0, 0.15);
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.3);
+  --scrollbar-thumb-color-hover: rgba(0, 0, 0, 0.45);
+
+  --bg-hero-linear-gradient: linear-gradient(
+    269deg,
+    var(--bg-color) 0%,
+    rgba(97, 140, 17, 0.75) 100%
+  );
+  /* --bg-hero-linear-gradient: linear-gradient(
+    269deg,
+    var(--bg-color) 0%,
+    rgb(97, 140, 17) 100%
+  ); */
 }
 
 html {
@@ -33,11 +65,12 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  color: var(--text-black-color);
+  color: var(--text-dark-color);
   background-color: var(--bg-color);
-  /* background-color: #4f4f4f; */
 
-  /* overflow: scroll; */
+  font-family: 'Poppins';
+
+  /* overflow-y: scroll; */
 }
 
 main {
