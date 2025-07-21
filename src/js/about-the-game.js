@@ -3,33 +3,6 @@ import { Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// const swiper = new Swiper('.about-the-game-swiper-one', {
-//   modules: [Pagination, Keyboard],
-//   containerModifierClass: 'about-the-game-swiper-one',
-//   slideActiveClass: 'about-the-game-swiper-slide-active',
-//   slidesPerView: 1,
-//   allowTouchMove: true,
-//   loop: false,
-//   preventClicks: true,
-//   grabCursor: true,
-//   pagination: {
-//     el: '.about-the-game-swiper-pagination',
-//   },
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//     },
-//     1200: {
-//       slidesPerView: 0,
-//     },
-//   },
-//   on: {
-//     init: function () {
-//       this.slideToLoop(1, 0);
-//     },
-//   },
-// });
-
 let swiperInstance = null;
 
 function initSwiper() {
