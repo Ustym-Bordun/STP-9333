@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination, Navigation, Keyboard } from 'swiper/modules';
+import { Pagination, Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -9,7 +9,7 @@ function initSwiperKey() {
   if (swiperInstance) swiperInstance.destroy(true, true);
 
   swiperInstance = new Swiper('.key-features-swiper-one', {
-    modules: [Pagination, Navigation, Keyboard],
+    modules: [Pagination, Navigation, Keyboard, Mousewheel],
     wrapperClass: 'key-features-list-image',
     slideClass: 'key-features-item',
     slideActiveClass: 'key-features-swiper-slide-active',
@@ -22,6 +22,9 @@ function initSwiperKey() {
     keyboard: {
       enabled: false,
       onlyInViewport: false,
+    },
+    mousewheel: {
+      forceToAxis: true,
     },
     pagination: {
       el: '.key-features-swiper-pagination',
@@ -39,6 +42,9 @@ function initSwiperKey() {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: -204,
+        allowTouchMove: false,
+        grabCursor: false,
+        slideToClickedSlide: true,
         keyboard: {
           enabled: true,
           onlyInViewport: true,
