@@ -1,0 +1,111 @@
+.merge-rewards-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 24px;
+}
+
+.merge-rewards-text {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.merge-rewards-under-text {
+  font-weight: 500;
+  text-align: center;
+}
+
+.merge-rewards-item-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.merge-rewards-image {
+  height: 501px;
+}
+
+.merge-rewards-text-overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  text-align: center;
+  font-weight: 500;
+  background: var(--bg-color);
+  border-radius: 24px;
+  padding: 5px;
+  width: 265px;
+}
+
+.merge-rewards-swip-wrapper.merge-rewards-swiper-one {
+  overflow: hidden;
+}
+
+.merge-rewards-swiper-pagination {
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.merge-rewards-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--bg-color-second);
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 1200px) {
+  .merge-rewards-title {
+    font-size: 36px;
+    line-height: 0.8;
+
+    margin-bottom: 40px;
+  }
+
+  .merge-rewards-text {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  .merge-rewards-list-image {
+    gap: 15px;
+    margin-bottom: 32px;
+  }
+
+  .merge-rewards-item-text {
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  .merge-rewards-image {
+    height: 360px;
+  }
+
+  .merge-rewards-text-overlay {
+    line-height: 1.5;
+    padding: 5px;
+    width: 187px;
+  }
+
+  /* SWIPER */
+
+  .merge-rewards-swiper-pagination {
+    display: none;
+    text-align: center;
+  }
+
+  .merge-rewards-swip-wrapper.merge-rewards-swiper-one {
+    overflow: visible;
+    margin-bottom: 32px;
+  }
+
+  .merge-rewards-item.swiper-slide {
+    flex-shrink: unset;
+    width: unset;
+  }
+
+  .merge-rewards-under-text {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
