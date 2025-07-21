@@ -1,6 +1,9 @@
 import { customAnimations } from './utils/custom-animations.js';
 
-import { onClose, onOpen } from './utils/on-open-or-close-modal-menu.js';
+import {
+  openModalMenu,
+  closeModalMenu,
+} from './utils/open-or-close-modal-menu.js';
 import { scrollToSection } from './utils/scrollToSection.js';
 
 customAnimations([
@@ -18,12 +21,12 @@ const headerNavigationLinkEls = document.querySelectorAll(
 );
 
 menuOpenBtnEl.addEventListener('click', e => {
-  // onOpen({ delayPointerEventsAll: 300 });
-  onOpen();
+  // openModalMenu({ delayPointerEventsAll: 300 });
+  openModalMenu();
 });
 
 menuCloseBtnEl.addEventListener('click', e => {
-  onClose();
+  closeModalMenu();
 });
 
 headerNavigationLinkEls.forEach(link => {

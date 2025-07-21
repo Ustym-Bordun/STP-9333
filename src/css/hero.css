@@ -1,10 +1,10 @@
-.hero {
-  background: linear-gradient(269deg, #fff 0%, #608c11 100%);
+.hero-section {
+  background: var(--bg-hero-linear-gradient);
 
   padding: 72px 0 18px 0;
 }
 
-.container-hero {
+.hero-container {
   display: flex;
   flex-direction: column;
 
@@ -18,71 +18,86 @@
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .container-hero {
+  .hero-container {
     background-image: url(/img/hero/iPhone-12-Pro-x2.png),
       url(/img/hero/iPhone-12-Pro2-x2.png);
   }
 }
 
-.main-title {
+.hero-main-title {
   font-weight: 500;
-  font-size: 32px;
   line-height: 1.5;
+
   letter-spacing: 0.05em;
+  /* letter-spacing: 0.046em; */
+  /* letter-spacing: 0.045em; */
+  /* letter-spacing: 0.04em; */
+  /* letter-spacing: 0; */
+
+  font-size: 32px;
+  /* font-size: 31px; */
 
   margin-bottom: 319px;
 }
 
-.first-image {
-  padding-bottom: 30px;
-}
-
-.icon-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.google-play-link {
+.hero-google-play-link {
   order: 1;
-}
 
-.link-wrapper {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
+
+  /* width: 288px; */
+  min-height: 70px;
+
   gap: 12px;
-  padding: 8px;
+
+  padding: 7px;
+
+  margin-bottom: 24px;
 
   border-radius: 16px;
-  background: var(--button-color);
-  margin-bottom: 24px;
-}
+  border: 1px solid transparent;
+  transition: border-color 300ms ease-in-out;
 
-.link-wrapper:hover {
-  border: 1px solid #0f0f0f;
-}
+  background: var(--bg-btn-color);
 
-.link-wrapper:active {
-  border: 1px solid #0f0f0f;
-}
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--box-shadow);
 
-.link-text {
   font-size: 18px;
   line-height: 1.5;
   color: var(--text-light-color);
-
-  text-shadow: 3px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.link-img {
+.hero-google-play-link.hover,
+.hero-google-play-link:focus {
+  /* transform: scale(0.95); */
+
+  border-color: var(--border-btn-light-color-hover-focus);
+
+  /* border-color: var(--border-btn-dark-color-hover-focus); */
+}
+.hero-google-play-link.active {
+  /* transform: scale(0.9); */
+
+  border-color: var(--border-btn-light-color-active);
+
+  /* border-color: var(--border-btn-dark-color-active); */
+}
+
+.hero-link-img {
+  display: block;
   height: 31px;
+  /* width: 28px; */
+  min-width: 28px;
 }
 
-.order-wrapper {
+.hero-order-wrapper {
   order: 2;
 }
 
-.sub-title {
+.hero-sub-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -91,29 +106,42 @@
   margin-bottom: 24px;
 }
 
-.text {
+.hero-text {
   font-family: 'Montserrat', sans-serif;
 
   margin-bottom: 16px;
+
+  line-height: 1.88;
 }
-.list-wrapper {
+.hero-list-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.item-wrapper {
+.hero-item-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
+.hero-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero-item-text {
+  font-family: 'Montserrat', sans-serif;
+
+  line-height: 1.88;
+}
+
 @media only screen and (min-width: 1200px) {
-  .hero {
+  .hero-section {
     padding: 116px 0 69px 0;
   }
 
-  .container-hero {
+  .hero-container {
     background-image: url(/img/hero/desktop/iPhone-12-Pro2-desktop.png),
       url(/img/hero/desktop/iPhone-12-Pro-desktop.png);
     background-repeat: no-repeat;
@@ -124,13 +152,13 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .container-hero {
+    .hero-container {
       background-image: url(/img/hero/desktop/iPhone-12-Pro2-desktop-x2.png),
         url(/img/hero/desktop/iPhone-12-Pro-desktop-x2.png);
     }
   }
 
-  .main-title {
+  .hero-main-title {
     font-size: 64px;
     line-height: 1.17;
 
@@ -138,41 +166,63 @@
     margin-bottom: 46px;
   }
 
-  .sub-title {
-    font-size: 36px;
-    line-height: 0.8;
-  }
-
-  .google-play-link {
+  .hero-google-play-link {
     order: 2;
+
+    width: 593px;
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0 24px;
+    /* padding-left: 25px; */
+    /* padding-right: 24px; */
+
+    /* margin-bottom: 24px; */
+    margin-bottom: 0;
+
+    font-size: 24px;
+  }
+  .hero-google-play-link-brake-line {
+    display: none;
   }
 
-  .order-wrapper {
+  .hero-order-wrapper {
     order: 1;
   }
 
-  .text {
+  .hero-sub-title {
+    font-size: 36px;
+    /* line-height: 0.8; */
+    line-height: 0.83;
+  }
+
+  .hero-text {
     width: 645px;
+
     font-size: 24px;
     line-height: 1.25;
+
     margin-bottom: 32px;
   }
 
-  .list-wrapper {
+  .hero-list-wrapper {
     margin-bottom: 32px;
   }
-  .item-text {
+
+  .hero-item-text {
     font-size: 24px;
     line-height: 1.25;
   }
 
-  .link-wrapper {
+  /* .link-wrapper {
     width: fit-content;
     margin: 0 auto;
     padding: 20px 26px;
+    padding: 19px 25px;
   }
 
   .link-text {
     font-size: 24px;
-  }
+  } */
 }

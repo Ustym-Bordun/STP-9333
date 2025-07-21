@@ -1,0 +1,166 @@
+.modal-cookies-policy {
+  position: fixed;
+
+  z-index: 201;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 284px;
+  max-height: 50%;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background-color: var(--bg-color-second);
+  color: var(--text-light-color);
+
+  pointer-events: none;
+
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out,
+    visibility 300ms ease-in-out;
+}
+.modal-cookies-policy.closed {
+  transform: translateY(100%);
+
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-cookies-policy.opened {
+  transform: translateY(0);
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-cookies-policy-container {
+  height: 100%;
+}
+
+.modal-cookies-policy-scroll-wrapper {
+  height: 100%;
+  overflow: auto;
+
+  padding: 8px 8px;
+}
+/* Стилізація скролу */
+.modal-cookies-policy-scroll-wrapper::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+.modal-cookies-policy-scroll-wrapper::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: var(--scrollbar-track-color);
+}
+.modal-cookies-policy-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 3px;
+}
+.modal-cookies-policy-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-color-hover);
+}
+
+.modal-cookies-policy-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.modal-cookies-policy-text {
+  font-size: 13px;
+  line-height: 1.54;
+
+  margin-bottom: 24px;
+}
+
+.modal-cookies-policy-btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-cookies-policy-btn {
+  height: 43px;
+
+  border-radius: 8px;
+
+  padding: 7px 23px;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  border: 1px solid transparent;
+  transition: border-color 300ms ease-in-out;
+
+  box-shadow: var(--box-shadow);
+}
+
+.modal-cookies-policy-btn.btn-accept {
+  color: var(--text-light-color);
+  background-color: var(--bg-btn-color);
+}
+.modal-cookies-policy-btn.btn-accept.hover,
+.modal-cookies-policy-btn.btn-accept:focus {
+  border-color: var(--border-btn-light-color-hover-focus);
+}
+.modal-cookies-policy-btn.btn-accept.active {
+  border-color: var(--border-btn-light-color-active);
+}
+
+.modal-cookies-policy-btn.btn-decline {
+  color: var(--text-dark-color);
+  background-color: var(--bg-btn-color-second);
+}
+.modal-cookies-policy-btn.btn-decline.hover,
+.modal-cookies-policy-btn.btn-decline:focus {
+  border-color: var(--border-btn-dark-color-hover-focus);
+}
+.modal-cookies-policy-btn.btn-decline.active {
+  border-color: var(--border-btn-dark-color-active);
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal-cookies-policy-title {
+    font-size: 36px;
+    line-height: 0.83;
+
+    margin-bottom: 34px;
+  }
+
+  .modal-cookies-policy-text {
+    font-size: 20px;
+    line-height: 1.75;
+
+    margin-bottom: 40px;
+  }
+  .modal-cookies-policy-text-brake-line {
+    display: none;
+  }
+
+  .modal-cookies-policy-btns-wrapper {
+    flex-direction: row;
+    justify-content: center;
+
+    /* gap: 47px; */
+    gap: 49px;
+  }
+
+  .modal-cookies-policy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 251px;
+    height: 68px;
+
+    padding: 0;
+
+    border-radius: 16px;
+
+    font-size: 24px;
+  }
+}
