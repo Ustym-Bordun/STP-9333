@@ -1,27 +1,27 @@
 .how-to-play-wrapper {
-  background-image: linear-gradient(
-    180deg,
-    #98b63b 0%,
-    #5e9929 40.87%,
-    rgba(67, 140, 32, 0.92) 100%
-  );
-  background-repeat: no-repeat;
-  background-position: 0 60px;
-  background-size: 1199px 511px;
-}
-
-.how-to-play-container {
-  background-image: url(/img/how-to-play/how-to-play.png);
-  background-repeat: no-repeat;
-  background-position: 0 60px;
-  background-size: 320px 511px;
+  background-image: url(/img/how-to-play/how-to-play.png),
+    linear-gradient(
+      180deg,
+      #98b63b 0%,
+      #5e9929 40.87%,
+      rgba(67, 140, 32, 0.92) 100%
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 60px, 0 60px;
+  background-size: 578px 511px, 1199px 511px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .how-to-play-container {
-    background-image: url(/img/how-to-play/how-to-play-x2.png);
+  .how-to-play-wrapper {
+    background-image: url(/img/how-to-play/how-to-play-x2.png),
+      linear-gradient(
+        180deg,
+        #98b63b 0%,
+        #5e9929 40.87%,
+        rgba(67, 140, 32, 0.92) 100%
+      );
   }
 }
 
@@ -78,13 +78,20 @@
 
 @media only screen and (min-width: 1200px) {
   .how-to-play-wrapper {
-    background-position: unset;
-    background-size: 2000px 608px;
+    background-image: linear-gradient(
+      180deg,
+      #98b63b 0%,
+      #5e9929 40.87%,
+      rgba(67, 140, 32, 0.92) 100%
+    );
+    background-position: center;
+    background-size: auto 608px;
   }
-  .how-to-play-container {
+
+  .how-to-play-second-container {
     background-image: url(/img/how-to-play/desktop/how-to-play-desktop.png);
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: right 25px;
     background-size: 580px 608px;
 
     padding-top: 107px;
@@ -94,7 +101,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .how-to-play-container {
+    .how-to-play-second-container {
       background-image: url(/img/how-to-play/desktop/how-to-play-desktop-x2.png);
     }
   }

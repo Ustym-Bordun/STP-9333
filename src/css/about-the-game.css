@@ -46,6 +46,10 @@
   text-align: center;
 }
 
+.about-the-game-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--bg-color-second);
+}
+
 /* DESKTOP STYLES */
 
 @media only screen and (min-width: 1200px) {
