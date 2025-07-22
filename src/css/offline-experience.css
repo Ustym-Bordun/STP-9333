@@ -1,0 +1,86 @@
+.offline-experience-container {
+  background-image: url(/img/offline-experience/offline-experience.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .offline-experience-container {
+    background-image: url(/img/offline-experience/offline-experience-x2.png);
+    background-size: 288px 266px;
+  }
+}
+
+.offline-experience-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 306px;
+}
+
+.offline-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.offline-experience-item-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.offline-experience-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .offline-experience-container {
+    background-image: none;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .offline-experience-container {
+      background-image: none;
+    }
+  }
+
+  .offline-experience-title {
+    font-size: 36px;
+    line-height: 0.83;
+
+    margin-bottom: 40px;
+  }
+
+  .offline-experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    box-shadow: 2px 1px 6px 2px rgba(0, 0, 0, 0.3);
+
+    background-image: url(/img/offline-experience/desktop/offline-experience-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    padding: 128px 15px;
+
+    border-radius: 16px;
+  }
+
+  .offline-experience-item-wrapper {
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  .offline-experience-list {
+    background-image: url(/img/offline-experience/desktop/offline-experience-desktop-x2.png);
+
+    background-size: cover;
+  }
+}
