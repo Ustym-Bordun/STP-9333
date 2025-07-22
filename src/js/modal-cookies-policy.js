@@ -18,10 +18,14 @@ const modalCookiesPolicyBtnDeclineEl = document.querySelector(
 const delayOpenModalCookies = 500;
 // const delayOpenModalCookies = 0;
 
-setTimeout(() => {
-  // openModalCookies({ delayPointerEventsAll: delayOpenModalCookies });
-  openModalCookies();
-}, delayOpenModalCookies);
+const acceptedOrDeclinedCookies = localStorage.getItem('acceptedCookies');
+
+if (!acceptedOrDeclinedCookies) {
+  setTimeout(() => {
+    // openModalCookies({ delayPointerEventsAll: delayOpenModalCookies });
+    openModalCookies();
+  }, delayOpenModalCookies);
+}
 
 modalCookiesPolicyBtnAcceptEl.addEventListener('click', () => {
   closeModalCookies();
