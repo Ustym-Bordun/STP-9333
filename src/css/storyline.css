@@ -1,0 +1,145 @@
+.storyline-section {
+  position: relative;
+}
+
+.storyline-photo {
+  position: absolute;
+
+  z-index: -102;
+
+  top: calc(96px + 20px);
+  right: 0;
+
+  height: 400px;
+
+  width: calc(50vw + 160px);
+
+  background-image: url(../img/storyline/storyline-mobile-1520w-1x.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 880px) {
+  .storyline-photo {
+    background-size: cover;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .storyline-photo {
+    background-image: url(../img/storyline/storyline-mobile-1520w-2x.jpg);
+  }
+}
+
+.storyline-white-border {
+  position: absolute;
+
+  z-index: -101;
+
+  top: calc(96px + 20px);
+  left: 0;
+
+  height: 400px;
+  width: 50vw;
+
+  background: url(../img/storyline/storyline-mobile-white-border.png),
+    linear-gradient(90deg, var(--bg-color) calc(50vw - 160px), transparent 0px);
+
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media only screen and (max-width: 335px) {
+  .storyline-white-border {
+    background-size: cover;
+  }
+}
+
+.storyline-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--text-dark-color);
+
+  margin-bottom: calc(24px + 400px + 16px);
+}
+
+.storyline-sub-title {
+  font-weight: 500;
+  line-height: 1.88;
+  color: var(--text-dark-color);
+
+  margin-bottom: 16px;
+}
+
+.storyline-text {
+  line-height: 1.88;
+  color: var(--text-dark-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .storyline-section {
+    padding-bottom: calc(93px + 50px);
+  }
+
+  .storyline-photo {
+    top: calc(70px + 50px);
+
+    height: 534px;
+    width: calc(50vw + 165px);
+
+    background-size: cover;
+    background-position: left;
+  }
+  @media screen and (min-width: 1500px) {
+    .storyline-photo {
+      width: calc((600px + 165px) + 150px);
+      background-size: calc((600px + 165px) + 150px), auto;
+
+      right: unset;
+      left: calc(50vw - 165px);
+
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+
+  .storyline-white-border {
+    top: calc(70px + 50px - 1px);
+
+    height: 536px;
+
+    width: calc(50vw + 35px);
+
+    background-image: url(../img/storyline/storyline-mobile-white-border.png);
+
+    background-repeat: no-repeat;
+    background-position: right;
+
+    background-size: contain;
+  }
+
+  .storyline-title {
+    font-size: 36px;
+    line-height: 0.83;
+
+    margin-bottom: calc(40px + 100px);
+  }
+
+  .storyline-sub-title {
+    font-size: 24px;
+    line-height: 1.5;
+
+    margin-bottom: 24x;
+  }
+
+  .storyline-text {
+    width: 455px;
+
+    font-size: 20px;
+    line-height: 1.75;
+  }
+}
