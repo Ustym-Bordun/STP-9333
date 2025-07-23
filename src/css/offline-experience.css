@@ -1,4 +1,5 @@
 .offline-experience-container {
+  position: relative;
   background-image: url(/img/offline-experience/offline-experience.png);
   background-repeat: no-repeat;
   background-position: center 60px;
@@ -11,6 +12,19 @@
     background-image: url(/img/offline-experience/offline-experience-x2.png);
     background-size: 288px 266px;
   }
+}
+
+.offline-experience-gnome-image {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+  bottom: 520px;
+  right: 0;
+
+  background-image: url(/img/offline-experience/offline-experience-gnome.png);
+  background-repeat: no-repeat;
+  background-size: 85px 100px;
 }
 
 .offline-experience-title {
@@ -48,6 +62,16 @@
     .offline-experience-container {
       background-image: none;
     }
+  }
+
+  .offline-experience-gnome-image {
+    width: 215px;
+    height: 160px;
+
+    bottom: 428px;
+    right: 0;
+
+    background-size: 170px 180px;
   }
 
   .offline-experience-title {

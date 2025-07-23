@@ -1,3 +1,20 @@
+.characters-wrapper {
+  position: relative;
+}
+
+.characters-gnome-image {
+  position: absolute;
+  width: 63px;
+  height: 92px;
+
+  bottom: 520px;
+  right: 0;
+
+  background-image: url(/img/characters/characters-gnome.png);
+  background-repeat: no-repeat;
+  background-size: 63px 92px;
+}
+
 .characters-title {
   font-weight: 500;
   font-size: 24px;
@@ -59,6 +76,16 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .characters-gnome-image {
+    width: 182px;
+    height: 204px;
+
+    bottom: 605px;
+    left: 0;
+
+    background-image: url(/img/characters/desktop/characters-gnome-desktop.png);
+    background-size: 182px 204px;
+  }
   .characters-title {
     font-size: 36px;
     line-height: 0.83;

@@ -31,6 +31,22 @@
 /* DESKTOP STYLES */
 
 @media only screen and (min-width: 1200px) {
+  .key-features-wrapper {
+    position: relative;
+  }
+
+  .key-features-gnome-image {
+    position: absolute;
+    width: 137px;
+    height: 120px;
+
+    bottom: 1010px;
+    left: 0;
+
+    background-image: url(/img/key-features/key-features-gnome.png);
+    background-repeat: no-repeat;
+    background-size: 115px 120px;
+  }
   .key-features-title {
     font-size: 36px;
     line-height: 0.83;

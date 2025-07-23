@@ -4,7 +4,20 @@
   padding: 72px 0 18px 0;
 }
 
+.hero-gnom-image {
+  position: absolute;
+  width: 27px;
+  height: 40px;
+
+  bottom: 940px;
+  right: 8px;
+
+  background-image: url(/img/hero/hero-gnom.png);
+  background-repeat: no-repeat;
+}
+
 .hero-container {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -139,6 +152,17 @@
 @media only screen and (min-width: 1200px) {
   .hero-section {
     padding: 116px 0 69px 0;
+  }
+
+  .hero-gnom-image {
+    width: 32px;
+    height: 42px;
+
+    bottom: 690px;
+    right: 0;
+
+    background-image: url(../img/hero/hero-gnom.png);
+    background-repeat: no-repeat;
   }
 
   .hero-container {

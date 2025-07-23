@@ -1,3 +1,20 @@
+.merge-rewards-wrapper {
+  position: relative;
+}
+
+.merge-rewards-gnome-image {
+  position: absolute;
+  width: 68px;
+  height: 84px;
+
+  bottom: 740px;
+  right: 0;
+
+  background-image: url(/img/merge-rewards/merge-rewards-gnome.png);
+  background-repeat: no-repeat;
+  background-size: 68px 84px;
+}
+
 .merge-rewards-title {
   font-weight: 500;
   font-size: 24px;
@@ -54,6 +71,16 @@
 /* DESKTOP STYLES */
 
 @media only screen and (min-width: 1200px) {
+  .merge-rewards-gnome-image {
+    width: 143px;
+    height: 175px;
+
+    bottom: 560px;
+    right: 0;
+
+    background-size: 143px 175px;
+  }
+
   .merge-rewards-title {
     font-size: 36px;
     line-height: 0.8;

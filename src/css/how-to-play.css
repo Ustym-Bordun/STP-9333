@@ -25,6 +25,23 @@
   }
 }
 
+.how-to-play-second-container {
+  position: relative;
+}
+
+.how-to-play-gnome-image {
+  position: absolute;
+  width: 41px;
+  height: 56px;
+
+  bottom: 1065px;
+  right: 5px;
+
+  background-image: url(/img/how-to-play/how-to-play-gnome.png);
+  background-repeat: no-repeat;
+  background-size: 41px 56px;
+}
+
 .how-to-play-title {
   font-weight: 500;
   font-size: 24px;
@@ -96,6 +113,19 @@
 
     padding-top: 107px;
     padding-bottom: 107px;
+  }
+
+  .how-to-play-gnome-image {
+    position: absolute;
+    width: 71px;
+    height: 96px;
+
+    bottom: 606px;
+    right: 24px;
+
+    background-image: url(/img/how-to-play/how-to-play-gnome.png);
+    background-repeat: no-repeat;
+    background-size: 71px 96px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),

@@ -2,6 +2,24 @@
   padding-top: 40px;
 }
 
+.about-the-game-wrapper {
+  position: relative;
+}
+
+.about-the-game-gnom-image {
+  position: absolute;
+
+  bottom: 820px;
+  right: 0;
+
+  width: 48px;
+  height: 71px;
+
+  background-image: url(/img/about-the-game/about-the-game-gnom.png);
+  background-repeat: no-repeat;
+  background-size: 48px 71px;
+}
+
 .about-the-game-title {
   font-weight: 500;
   font-size: 24px;
@@ -55,6 +73,20 @@
 @media only screen and (min-width: 1200px) {
   .about-the-game-section {
     padding-top: 100px;
+  }
+
+  .about-the-game-gnom-image {
+    position: absolute;
+
+    bottom: 650px;
+    right: -25px;
+
+    width: 120px;
+    height: 174px;
+
+    background-image: url(/img/about-the-game/desktop/about-the-game-gnom-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100px 170px;
   }
 
   .about-the-game-title {

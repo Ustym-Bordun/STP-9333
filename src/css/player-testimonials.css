@@ -1,3 +1,20 @@
+.player-testimonials-wrapper {
+  position: relative;
+}
+
+.player-testimonials-gnome-image {
+  position: absolute;
+  width: 56px;
+  height: 100px;
+
+  bottom: 450px;
+  left: 0;
+
+  background-image: url(/img/player-testimonials/player-testimonials-gnome.png);
+  background-repeat: no-repeat;
+  background-size: 56px 69px;
+}
+
 .player-testimonials-title {
   font-weight: 500;
   font-size: 24px;
@@ -73,6 +90,16 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .player-testimonials-gnome-image {
+    width: 119px;
+    height: 155px;
+
+    bottom: 510px;
+    left: 0;
+
+    background-size: 119px 155px;
+  }
+
   .player-testimonials-title {
     font-size: 36px;
     line-height: 0.83;
