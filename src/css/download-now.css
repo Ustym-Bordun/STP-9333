@@ -1,0 +1,185 @@
+.download-now-section {
+  color: var(--text-dark-color);
+}
+
+.download-now-container {
+  position: relative;
+}
+
+.download-now-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 24px;
+}
+
+.download-now-sub-title {
+  font-weight: 500;
+  line-height: 1.88;
+
+  margin-bottom: 16px;
+}
+
+.download-now-text {
+  line-height: 1.88;
+
+  margin-bottom: 240px;
+}
+
+.download-now-bg-img-wrapper {
+  position: absolute;
+
+  pointer-events: none;
+
+  width: 100%;
+  height: 100%;
+  /* height: calc(280px + 20px + 215px); */
+
+  top: 20px;
+  left: 0;
+
+  background-image: url(../img/download-now/mobile/download-now-mobile-audrey-1x.png),
+    url(../img/download-now/mobile/download-now-mobile-gnome-1-1x.png),
+    url(../img/download-now/mobile/download-now-mobile-gnome-2-1x.png),
+    url(../img/download-now/mobile/download-now-mobile-gnome-3-1x.png),
+    url(../img/download-now/mobile/download-now-mobile-chicken-1x.png);
+
+  background-repeat: no-repeat;
+
+  background-position: 1px 280px, 92px 439px, 131px 427px, 179px 438px,
+    206px 325px;
+
+  /* background-size: 108px 215px, 35px 56px, 38px 68px, 29px 57px, 113px 170px; */
+  background-size: 108px auto, 35px auto, 38px auto, 29px auto, 113px auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .download-now-bg-img-wrapper {
+    background-image: url(../img/download-now/mobile/download-now-mobile-audrey-2x.png),
+      url(../img/download-now/mobile/download-now-mobile-gnome-1-2x.png),
+      url(../img/download-now/mobile/download-now-mobile-gnome-2-2x.png),
+      url(../img/download-now/mobile/download-now-mobile-gnome-3-2x.png),
+      url(../img/download-now/mobile/download-now-mobile-chicken-2x.png);
+  }
+}
+
+.download-now-google-play-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70px;
+
+  gap: 12px;
+
+  padding: 7px;
+
+  margin-bottom: 24px;
+
+  border-radius: 16px;
+  border: 1px solid transparent;
+  transition: border-color 300ms ease-in-out;
+
+  background: var(--bg-btn-color);
+
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--box-shadow);
+
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-light-color);
+}
+
+.download-now-google-play-link.hover,
+.download-now-google-play-link:focus {
+  /* border-color: var(--border-btn-light-color-hover-focus); */
+
+  border-color: var(--border-btn-dark-color-hover-focus);
+}
+.download-now-google-play-link.active {
+  /* border-color: var(--border-btn-light-color-active); */
+
+  border-color: var(--border-btn-dark-color-active);
+}
+
+.download-now-link-img {
+  display: block;
+  height: 31px;
+  min-width: 28px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .download-now-title {
+    font-size: 36px;
+    line-height: 0.83;
+
+    margin-bottom: 40px;
+  }
+
+  .download-now-sub-title {
+    font-size: 24px;
+    line-height: 1.5;
+
+    margin-bottom: 16px;
+  }
+
+  .download-now-text {
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: center;
+
+    margin-bottom: 459px;
+  }
+
+  .download-now-bg-img-wrapper {
+    /* height: 100%; */
+    /* height: calc(162px + 50px + 495px); */
+
+    top: 50px;
+    left: 0;
+
+    background-image: url(../img/download-now/desktop/download-now-desktop-audrey-1x.png),
+      url(../img/download-now/desktop/download-now-desktop-gnome-1-1x.png),
+      url(../img/download-now/desktop/download-now-desktop-gnome-2-1x.png),
+      url(../img/download-now/desktop/download-now-desktop-gnome-3-1x.png),
+      url(../img/download-now/desktop/download-now-desktop-chicken-1x.png);
+
+    background-position: 55px 112px, 333px 398px, 527px 344px, 729px 381px,
+      829px 150px;
+
+    /* background-size: 248.53px 495px, 121.3px 201px, 128.42px 241px, 97.2px 204px,
+      331px 458px; */
+    /* background-size: 248.53px auto, 121.3px auto, 128.42px auto, 97.2px auto, 331px auto; */
+    background-size: auto 495px, auto 201px, auto 241px, auto 204px, auto 458px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .download-now-bg-img-wrapper {
+      background-image: url(../img/download-now/desktop/download-now-desktop-audrey-2x.png),
+        url(../img/download-now/desktop/download-now-desktop-gnome-1-2x.png),
+        url(../img/download-now/desktop/download-now-desktop-gnome-2-2x.png),
+        url(../img/download-now/desktop/download-now-desktop-gnome-3-2x.png),
+        url(../img/download-now/desktop/download-now-desktop-chicken-2x.png);
+    }
+  }
+
+  .download-now-google-play-link {
+    width: 593px;
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0 24px;
+    margin-bottom: 0;
+
+    font-size: 24px;
+  }
+  .download-now-google-play-link-brake-line {
+    display: none;
+  }
+}

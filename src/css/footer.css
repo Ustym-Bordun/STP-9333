@@ -27,6 +27,7 @@
 }
 
 .footer-link {
+  display: inline-block;
   transition: transform 300ms ease-in-out;
 }
 

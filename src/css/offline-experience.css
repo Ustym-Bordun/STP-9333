@@ -49,6 +49,16 @@
 .offline-experience-icon-wrapper {
   display: flex;
   align-items: center;
+
+  /* stroke: var(--text-dark-color); */
+  fill: var(--text-dark-color);
+}
+
+.offline-experience-icon-wrapper.icon-wifi {
+  /* fill: saddlebrown;
+  stroke: aqua; */
+  fill: transparent;
+  stroke: var(--text-dark-color);
 }
 
 @media only screen and (min-width: 1200px) {

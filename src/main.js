@@ -7,7 +7,8 @@ import './js/merge-rewards';
 import './js/characters';
 import './js/level-progression';
 import './js/player-testimonials';
-import './js/merge';
+import './js/download-now';
+import './js/contact-and-support';
 
 import './js/footer';
 
