@@ -1,0 +1,158 @@
+.contacts-and-support-section {
+  padding-bottom: 40px;
+}
+
+.contacts-and-support-container {
+  background-image: url(/img/contacts-and-support/contacts-and-support.png),
+    linear-gradient(180deg, #39ab0c 0%, #5abb06 47.62%);
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom;
+  background-size: 320px 402px, 1199px 402px;
+
+  padding-bottom: 420px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .contacts-and-support-container {
+    background-image: url(/img/contacts-and-support/contacts-and-support-x2.png),
+      linear-gradient(180deg, #39ab0c 0%, #5abb06 47.62%);
+  }
+}
+
+.contacts-and-support-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 24px;
+}
+
+.contacts-and-support-text {
+  font-weight: 500;
+
+  margin-bottom: 16px;
+}
+
+.contacts-and-support-list-support {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.span-link-email {
+  display: none;
+}
+
+.contacts-and-support-item-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.contacts-and-support-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-and-support-social-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 16px;
+}
+
+.contacts-and-support-social-link-list {
+  display: flex;
+  gap: 16px;
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 1200px) {
+  .contacts-and-support-section {
+    padding-bottom: 100px;
+  }
+
+  .contacts-and-support-container {
+    background-image: linear-gradient(180deg, #39ab0c 0%, #5abb06 47.62%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 3000px 695px;
+
+    padding-bottom: 0;
+
+    color: var(--text-light-color);
+  }
+
+  .contacts-and-support-second-container {
+    height: 757px;
+
+    background-image: url(/img/contacts-and-support/desktop/contacts-and-support-desktop.png);
+
+    background-repeat: no-repeat;
+    background-size: 590px 695px;
+    background-position: bottom right;
+
+    padding-bottom: 184px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .contacts-and-support-container {
+      background-image: linear-gradient(180deg, #39ab0c 0%, #5abb06 47.62%);
+    }
+    .contacts-and-support-second-container {
+      background-image: url(/img/contacts-and-support/desktop/contacts-and-support-desktop-x2.png);
+    }
+  }
+
+  .contacts-and-support-title {
+    font-size: 36px;
+    line-height: 0.83333;
+    color: var(--text-dark-color);
+
+    margin-bottom: 217px;
+  }
+
+  .contacts-and-support-text {
+    width: 646px;
+    font-size: 24px;
+    line-height: 1.5;
+
+    margin-bottom: 32px;
+  }
+
+  .contacts-and-support-list-support {
+    gap: 16px;
+
+    margin-bottom: 24px;
+  }
+
+  .span-link-email {
+    display: inline;
+  }
+
+  .br-support-hours {
+    display: none;
+  }
+
+  .contacts-and-support-item-wrapper {
+    display: flex;
+    gap: 8px;
+
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  .contacts-and-support-social-text {
+    font-size: 32px;
+  }
+  .contacts-and-support-social-link-icon {
+    fill: currentColor;
+  }
+}
