@@ -1,0 +1,143 @@
+.player-testimonials-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+
+  margin-bottom: 24px;
+}
+
+.player-testimonials-subtitle {
+  font-weight: 500;
+
+  margin-bottom: 24px;
+}
+.player-testimonials-swip-wrapper {
+  padding-top: 90px;
+}
+.player-testimonials-item-wrapper {
+  position: relative;
+
+  border: 3px solid var(--bg-color-second);
+  border-radius: 20px;
+  padding: 92px 16px 16px 16px;
+
+  box-shadow: 2px 1px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.player-testimonials-list {
+  margin-bottom: 16px;
+}
+
+.player-testimonials-image {
+  position: absolute;
+  bottom: 152px;
+  left: 81px;
+}
+
+.player-testimonials-svg {
+  position: absolute;
+  top: 92px;
+  right: 16px;
+}
+
+.player-testimonials-item-name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2;
+
+  margin-bottom: 8px;
+}
+
+.player-testimonials-text {
+  font-size: 13px;
+  line-height: 1.54;
+
+  height: 80px;
+}
+
+/* SWIPER STYLES*/
+.player-testimonials-swip-wrapper.player-testimonials-swiper-one {
+  overflow: hidden;
+}
+
+.player-testimonials-swiper-navigation {
+  display: none;
+}
+
+.player-testimonials-swiper-pagination {
+  text-align: center;
+}
+
+.player-testimonials-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--bg-color-second);
+}
+
+@media only screen and (min-width: 1200px) {
+  .player-testimonials-title {
+    font-size: 36px;
+    line-height: 0.83;
+
+    margin-bottom: 40px;
+  }
+
+  .player-testimonials-subtitle {
+    line-height: 1.5;
+
+    margin-bottom: 49px;
+  }
+
+  .player-testimonials-list {
+    margin-bottom: 24px;
+  }
+
+  .player-testimonials-swiper-pagination {
+    display: none;
+  }
+
+  .player-testimonials-swiper-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .player-testimonials-swiper-prev,
+  .player-testimonials-swiper-next {
+    background-color: inherit;
+  }
+
+  .player-testimonials-image {
+    width: 174px;
+    height: 242px;
+
+    bottom: 40px;
+    left: 40px;
+  }
+
+  .player-testimonials-item-name {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: start;
+
+    margin-bottom: 16px;
+  }
+
+  .player-testimonials-text {
+    font-size: 20px;
+    line-height: 1.75;
+
+    height: 70px;
+  }
+
+  .player-testimonials-item-wrapper {
+    padding: 31px 42px 40px 286px;
+  }
+
+  .player-testimonials-svg {
+    position: absolute;
+    top: 38px;
+    right: 45px;
+
+    width: 32px;
+    height: 32px;
+  }
+}
