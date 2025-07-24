@@ -4,7 +4,6 @@ import { hoverAnimation } from './hover-animation.js';
 
 export const customAnimations = selectors => {
   selectors.forEach(selector => {
-    console.log('1');
     // focusBlur({ selector, delay: 300 });
     // hoverAnimation({ selector, dataName = 'hover', delay: 300 });
     // activeAnimation({ selector, dataName = 'hover', delay: 300 });
