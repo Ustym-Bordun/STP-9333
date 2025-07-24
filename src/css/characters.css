@@ -115,23 +115,35 @@
   .characters-swiper-navigation {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 24px;
   }
 
-  .characters-swiper-prev,
-  .characters-swiper-next {
-    background-color: inherit;
-  }
-
-  .arrow-navigation {
+  .characters-swiper-navigation-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: 1px solid #0f0f0f;
-    border-radius: 150px;
-    padding: 14px;
-    width: 59px;
-    height: 59px;
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid var(--text-dark-color);
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    transition: transform 300ms ease-in-out;
+  }
+
+  .characters-swiper-navigation-btn.hover,
+  .characters-swiper-navigation-btn:focus {
+    transform: scale(0.95);
+  }
+  .characters-swiper-navigation-btn.active {
+    transform: scale(0.9);
+  }
+
+  .characters-icon {
+    fill: transparent;
+    stroke: var(--text-dark-color);
   }
 }
