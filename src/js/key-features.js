@@ -3,6 +3,10 @@ import { Pagination, Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { customAnimations } from './utils/custom-animations.js';
+
+customAnimations(['.key-features-swiper-navigation-btn']);
+
 let swiperInstance = null;
 
 function initSwiperKey() {

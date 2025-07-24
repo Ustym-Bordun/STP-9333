@@ -31,6 +31,7 @@
 
 .contacts-and-support-text {
   font-weight: 500;
+  line-height: 1.88;
 
   margin-bottom: 16px;
 }
@@ -43,18 +44,36 @@
   margin-bottom: 16px;
 }
 
-.span-link-email {
-  display: none;
-}
-
 .contacts-and-support-item-wrapper {
   display: flex;
+  align-items: center;
+
   gap: 8px;
 }
 
-.contacts-and-support-icon-wrapper {
-  display: flex;
-  align-items: center;
+.contacts-and-support-social-item-icon {
+  fill: transparent;
+  stroke: var(--text-dark-color);
+}
+
+.contacts-and-support-item-text.item-email-text {
+  display: none;
+}
+
+.contacts-and-support-link,
+.contacts-and-support-item-text {
+  line-height: 1.88;
+}
+
+.contacts-and-support-link {
+  transition: transform 300ms ease-in-out;
+}
+.contacts-and-support-link.hover,
+.contacts-and-support-link:focus {
+  transform: scale(0.95);
+}
+.contacts-and-support-link.active {
+  transform: scale(0.9);
 }
 
 .contacts-and-support-social-text {
@@ -68,6 +87,24 @@
 .contacts-and-support-social-link-list {
   display: flex;
   gap: 16px;
+
+  line-height: 0;
+}
+
+.contacts-and-support-social-link {
+  display: block;
+
+  transition: transform 300ms ease-in-out;
+
+  width: 36px;
+  height: 36px;
+}
+.contacts-and-support-social-link.hover,
+.contacts-and-support-social-link:focus {
+  transform: scale(0.95);
+}
+.contacts-and-support-social-link.active {
+  transform: scale(0.9);
 }
 
 /* DESKTOP STYLES */
@@ -89,13 +126,13 @@
   }
 
   .contacts-and-support-second-container {
-    height: 757px;
-
     background-image: url(/img/contacts-and-support/desktop/contacts-and-support-desktop.png);
 
     background-repeat: no-repeat;
     background-size: 590px 695px;
-    background-position: bottom right;
+
+    background-position-x: right;
+    background-position-y: 62px;
 
     padding-bottom: 184px;
   }
@@ -113,7 +150,7 @@
 
   .contacts-and-support-title {
     font-size: 36px;
-    line-height: 0.83333;
+    line-height: 0.83;
     color: var(--text-dark-color);
 
     margin-bottom: 217px;
@@ -128,23 +165,26 @@
   }
 
   .contacts-and-support-list-support {
-    gap: 16px;
+    gap: 24px;
 
     margin-bottom: 24px;
   }
 
-  .span-link-email {
-    display: inline;
-  }
-
-  .br-support-hours {
+  .contacts-and-support-br-support-hours {
     display: none;
   }
 
-  .contacts-and-support-item-wrapper {
-    display: flex;
-    gap: 8px;
+  .contacts-and-support-social-item-icon {
+    fill: transparent;
+    stroke: var(--text-light-color);
+  }
 
+  .contacts-and-support-item-text.item-email-text {
+    display: block;
+  }
+
+  .contacts-and-support-link,
+  .contacts-and-support-item-text {
     font-size: 20px;
     line-height: 1.75;
   }
@@ -152,7 +192,8 @@
   .contacts-and-support-social-text {
     font-size: 32px;
   }
+
   .contacts-and-support-social-link-icon {
-    fill: currentColor;
+    fill: var(--text-light-color);
   }
 }
