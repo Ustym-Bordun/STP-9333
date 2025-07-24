@@ -7,7 +7,7 @@ let swiperInstance = null;
 
 const initializeSwiper = () => {
   if (window.innerWidth < 1200 && !swiperInstance) {
-    swiperInstance = new Swiper('.level-progression-swiper', {
+    swiperInstance = new Swiper('[data-level-progression-swiper]', {
       modules: [Pagination, Keyboard, Mousewheel],
       wrapperClass: 'level-progression-swiper-wrapper',
       slideClass: 'level-progression-swiper-slide',
@@ -28,7 +28,7 @@ const initializeSwiper = () => {
       },
 
       pagination: {
-        el: '.level-progression-swiper-pagination',
+        el: '[data-level-progression-swiper-pagination]',
         clickable: true,
       },
     });
@@ -40,22 +40,3 @@ const initializeSwiper = () => {
 
 window.addEventListener('load', initializeSwiper);
 window.addEventListener('resize', initializeSwiper);
-
-// const swiperCurrentView = () => {
-//   return window.innerWidth >= 1200 ? 'desc' : 'mob';
-// };
-
-// let swiperInitialized = swiperCurrentView();
-
-// window.addEventListener('load', () => {
-//   initializeSwiper();
-//   prevView = swiperCurrentView();
-// });
-
-// window.addEventListener('resize', () => {
-//   const currentView = swiperCurrentView();
-//   if (currentView !== prevView) {
-//     initializeSwiper();
-//     prevView = currentView;
-//   }
-// });

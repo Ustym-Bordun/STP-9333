@@ -5,7 +5,7 @@ import {
   openModalCookies,
 } from './utils/open-or-close-modal-cookies.js';
 
-customAnimations(['.modal-cookies-policy-btn']);
+customAnimations(['[data-modal-cookies-policy-btn]']);
 
 const modalCookiesPolicyBtnAcceptEl = document.querySelector(
   '[data-modalCookiesAccept]'

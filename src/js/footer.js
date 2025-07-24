@@ -1,3 +1,3 @@
 import { customAnimations } from './utils/custom-animations.js';
 
-customAnimations(['.footer-link']);
+customAnimations(['[data-footer-link]']);

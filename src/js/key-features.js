@@ -5,14 +5,14 @@ import 'swiper/css/pagination';
 
 import { customAnimations } from './utils/custom-animations.js';
 
-customAnimations(['.key-features-swiper-navigation-btn']);
+customAnimations(['[data-key-features-swiper-navigation-btn]']);
 
 let swiperInstance = null;
 
 function initSwiperKey() {
   if (swiperInstance) swiperInstance.destroy(true, true);
 
-  swiperInstance = new Swiper('.key-features-swiper-one', {
+  swiperInstance = new Swiper('[data-key-features-swiper-one]', {
     modules: [Pagination, Navigation, Keyboard, Mousewheel],
     wrapperClass: 'key-features-list-image',
     slideClass: 'key-features-item',
@@ -31,7 +31,7 @@ function initSwiperKey() {
       forceToAxis: true,
     },
     pagination: {
-      el: '.key-features-swiper-pagination',
+      el: '[data-key-features-swiper-pagination]',
       clickable: true,
       enabled: true,
     },
@@ -58,8 +58,8 @@ function initSwiperKey() {
         },
         navigation: {
           enabled: true,
-          nextEl: '.key-features-swiper-next',
-          prevEl: '.key-features-swiper-prev',
+          prevEl: '[data-key-features-swiper-prev]',
+          nextEl: '[data-key-features-swiper-next]',
         },
       },
     },

@@ -1,3 +1,3 @@
 import { customAnimations } from './utils/custom-animations.js';
 
-customAnimations(['.hero-google-play-link']);
+customAnimations(['[data-hero-google-play-link]']);

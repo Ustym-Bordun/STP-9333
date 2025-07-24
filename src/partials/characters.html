@@ -4,7 +4,10 @@
     <h2 class="characters-title">Characters</h2>
     <h3 class="characters-subtitle">Meet the Match-Makers of the Farm</h3>
 
-    <div class="characters-swip-wrapper characters-swiper-one">
+    <div
+      class="characters-swip-wrapper characters-swiper-one"
+      data-characters-swiper-one
+    >
       <ul class="characters-list-image swiper-wrapper">
         <li class="characters-item swiper-slide">
           <picture>
@@ -168,12 +171,18 @@
           <p class="characters-card-text">Silent... too silent</p>
         </li>
       </ul>
-      <div class="characters-swiper-pagination"></div>
+
+      <div
+        class="characters-swiper-pagination"
+        data-characters-swiper-pagination
+      ></div>
 
       <div class="characters-swiper-navigation">
         <button
           class="characters-swiper-prev characters-swiper-navigation-btn"
           aria-label="Previous slide"
+          data-characters-swiper-prev
+          data-characters-swiper-navigation-btn
         >
           <svg class="characters-icon icon-arrow-left" width="30" height="30">
             <use href="./img/sprite.svg#icon-arrow-left"></use>
@@ -182,6 +191,8 @@
         <button
           class="characters-swiper-next characters-swiper-navigation-btn"
           aria-label="Next slide"
+          data-characters-swiper-next
+          data-characters-swiper-navigation-btn
         >
           <svg class="characters-icon icon-arrow-right" width="30" height="30">
             <use href="./img/sprite.svg#icon-arrow-right"></use>
