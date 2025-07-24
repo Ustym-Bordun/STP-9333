@@ -50,8 +50,7 @@
     <header class="header" data-header>
   <div class="container">
     <div class="header-wrapper">
-      <a class="logo-link" href="./index.html">
-        <!-- <a class="logo-link" href="#"> -->
+      <a class="logo-link" href="./index.html" data-header-logo-link>
         <img
           class="logo"
           srcset="/STP-9333/assets/logo-mobile-DyI7-Pd-.png 50w, /STP-9333/assets/logo-desktop-DfhiM9v6.png 75w"
@@ -64,8 +63,9 @@
 
       <button
         class="open-menu-btn"
-        data-modalMenuAction="open"
         aria-label="Open menu"
+        data-modalMenuAction="open"
+        data-header-open-menu-btn
       >
         <svg class="open-menu-icon" width="24" height="24">
           <use href="/STP-9333/assets/sprite-CzyyTwCm.svg#icon-open-menu"></use>
@@ -74,8 +74,9 @@
 
       <button
         class="close-menu-btn"
-        data-modalMenuAction="close"
         aria-label="Close menu"
+        data-modalMenuAction="close"
+        data-header-close-menu-btn
       >
         <svg class="close-menu-icon" width="24" height="24">
           <use href="/STP-9333/assets/sprite-CzyyTwCm.svg#icon-close-menu"></use>
@@ -208,6 +209,7 @@
       class="hero-google-play-link"
       target="_blank"
       href="https://play.google.com/store/apps/details?id=com.slotslimited.triplematchandmerge.android&hl=en&gl=us"
+      data-hero-google-play-link
     >
       <img
         class="hero-link-img"
@@ -318,7 +320,10 @@
       </li>
     </ul>
 
-    <div class="about-the-game-swip-wrapper about-the-game-swiper-one">
+    <div
+      class="about-the-game-swip-wrapper about-the-game-swiper-one"
+      data-about-the-game-swiper-one
+    >
       <ul class="about-the-game-list-image swiper-wrapper">
         <li class="about-the-game-item swiper-slide">
           <picture>
@@ -387,7 +392,10 @@
           </picture>
         </li>
       </ul>
-      <div class="about-the-game-swiper-pagination"></div>
+      <div
+        class="about-the-game-swiper-pagination"
+        data-about-the-game-swiper-pagination
+      ></div>
     </div>
   </div>
 </section>
@@ -423,7 +431,10 @@
     <h2 class="key-features-title">Key Features</h2>
     <p class="key-features-text">Why You’ll Love Match & Merge</p>
 
-    <div class="key-features-swip-wrapper key-features-swiper-one">
+    <div
+      class="key-features-swip-wrapper key-features-swiper-one"
+      data-key-features-swiper-one
+    >
       <ul class="key-features-list-image swiper-wrapper">
         <li class="key-features-item swiper-slide">
           <picture>
@@ -603,12 +614,17 @@
         </li>
       </ul>
 
-      <div class="key-features-swiper-pagination"></div>
+      <div
+        class="key-features-swiper-pagination"
+        data-key-features-swiper-pagination
+      ></div>
 
       <div class="key-features-swiper-navigation">
         <button
           class="key-features-swiper-prev key-features-swiper-navigation-btn"
           aria-label="Previous slide"
+          data-key-features-swiper-prev
+          data-key-features-swiper-navigation-btn
         >
           <svg class="key-features-icon icon-arrow-left" width="30" height="30">
             <use href="/STP-9333/assets/sprite-CzyyTwCm.svg#icon-arrow-left"></use>
@@ -617,6 +633,8 @@
         <button
           class="key-features-swiper-next key-features-swiper-navigation-btn"
           aria-label="Next slide"
+          data-key-features-swiper-next
+          data-key-features-swiper-navigation-btn
         >
           <svg
             class="key-features-icon icon-arrow-right"
@@ -641,7 +659,10 @@
       mysterious chest. Inside:
     </p>
 
-    <div class="merge-rewards-swip-wrapper merge-rewards-swiper-one">
+    <div
+      class="merge-rewards-swip-wrapper merge-rewards-swiper-one"
+      data-merge-rewards-swiper-one
+    >
       <ul class="merge-rewards-list-image swiper-wrapper">
         <li class="merge-rewards-item swiper-slide">
           <picture>
@@ -764,7 +785,11 @@
           <p class="merge-rewards-text-overlay">Story clues & unique unlocks</p>
         </li>
       </ul>
-      <div class="merge-rewards-swiper-pagination"></div>
+
+      <div
+        class="merge-rewards-swiper-pagination"
+        data-merge-rewards-swiper-pagination
+      ></div>
     </div>
 
     <p class="merge-rewards-under-text">
@@ -799,7 +824,10 @@
     <h2 class="characters-title">Characters</h2>
     <h3 class="characters-subtitle">Meet the Match-Makers of the Farm</h3>
 
-    <div class="characters-swip-wrapper characters-swiper-one">
+    <div
+      class="characters-swip-wrapper characters-swiper-one"
+      data-characters-swiper-one
+    >
       <ul class="characters-list-image swiper-wrapper">
         <li class="characters-item swiper-slide">
           <picture>
@@ -933,12 +961,18 @@
           <p class="characters-card-text">Silent... too silent</p>
         </li>
       </ul>
-      <div class="characters-swiper-pagination"></div>
+
+      <div
+        class="characters-swiper-pagination"
+        data-characters-swiper-pagination
+      ></div>
 
       <div class="characters-swiper-navigation">
         <button
           class="characters-swiper-prev characters-swiper-navigation-btn"
           aria-label="Previous slide"
+          data-characters-swiper-prev
+          data-characters-swiper-navigation-btn
         >
           <svg class="characters-icon icon-arrow-left" width="30" height="30">
             <use href="/STP-9333/assets/sprite-CzyyTwCm.svg#icon-arrow-left"></use>
@@ -947,6 +981,8 @@
         <button
           class="characters-swiper-next characters-swiper-navigation-btn"
           aria-label="Next slide"
+          data-characters-swiper-next
+          data-characters-swiper-navigation-btn
         >
           <svg class="characters-icon icon-arrow-right" width="30" height="30">
             <use href="/STP-9333/assets/sprite-CzyyTwCm.svg#icon-arrow-right"></use>
@@ -1021,7 +1057,7 @@
 
     <h3 class="level-progression-sub-title">From Cluttered to Magical</h3>
 
-    <div class="level-progression-swiper swiper">
+    <div class="level-progression-swiper swiper" data-level-progression-swiper>
       <ul class="level-progression-swiper-wrapper swiper-wrapper">
         <li class="level-progression-swiper-slide swiper-slide">
           <img
@@ -1043,7 +1079,10 @@
         </li>
       </ul>
 
-      <div class="level-progression-swiper-pagination swiper-pagination"></div>
+      <div
+        class="level-progression-swiper-pagination swiper-pagination"
+        data-level-progression-swiper-pagination
+      ></div>
     </div>
 
     <img
@@ -1065,6 +1104,7 @@
 
     <div
       class="player-testimonials-swip-wrapper player-testimonials-swiper-one"
+      data-player-testimonials-swiper-one
     >
       <ul class="player-testimonials-list swiper-wrapper">
         <li class="player-testimonials-item swiper-slide">
@@ -1340,11 +1380,18 @@
           </div>
         </li>
       </ul>
-      <div class="player-testimonials-swiper-pagination"></div>
+
+      <div
+        class="player-testimonials-swiper-pagination"
+        data-player-testimonials-swiper-pagination
+      ></div>
+
       <div class="player-testimonials-swiper-navigation">
         <button
           class="player-testimonials-swiper-prev player-testimonials-swiper-navigation-btn"
           aria-label="Previous slide"
+          data-player-testimonials-swiper-prev
+          data-player-testimonials-swiper-navigation-btn
         >
           <svg
             class="player-testimonials-icon icon-arrow-left"
@@ -1357,6 +1404,8 @@
         <button
           class="player-testimonials-swiper-next player-testimonials-swiper-navigation-btn"
           aria-label="Next slide"
+          data-player-testimonials-swiper-next
+          data-player-testimonials-swiper-navigation-btn
         >
           <svg
             class="player-testimonials-icon icon-arrow-right"
@@ -1389,6 +1438,7 @@
       class="download-now-google-play-link"
       target="_blank"
       href="https://play.google.com/store/apps/details?id=com.slotslimited.triplematchandmerge.android&hl=en&gl=us"
+      data-download-now-google-play-link
     >
       <img
         class="download-now-link-img"
@@ -1427,6 +1477,7 @@
           <a
             class="contacts-and-support-link"
             href="mailto:info@turboemeraldmatch.com"
+            data-contacts-and-support-link
           >
             info@turboemeraldmatch.com
           </a>
@@ -1456,6 +1507,7 @@
             class="contacts-and-support-social-link"
             href="https://x.com/"
             target="_blank"
+            data-contacts-and-support-social-link
           >
             <svg
               class="contacts-and-support-social-link-icon"
@@ -1471,6 +1523,7 @@
             class="contacts-and-support-social-link"
             href="https://www.facebook.com/"
             target="_blank"
+            data-contacts-and-support-social-link
           >
             <svg
               class="contacts-and-support-social-link-icon"
@@ -1486,6 +1539,7 @@
             class="contacts-and-support-social-link"
             href="https://www.instagram.com/"
             target="_blank"
+            data-contacts-and-support-social-link
           >
             <svg
               class="contacts-and-support-social-link-icon"
@@ -1510,15 +1564,25 @@
     </p>
     <ul class="footer-list">
       <li class="footer-item">
-        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <a class="footer-link" href="privacy-policy.html" data-footer-link>
+          Privacy Policy
+        </a>
         <div class="right-border"></div>
       </li>
       <li class="footer-item">
-        <a href="terms-and-conditions.html" class="footer-link">Terms of Use</a>
+        <a
+          class="footer-link"
+          href="terms-and-conditions.html"
+          data-footer-link
+        >
+          Terms of Use
+        </a>
         <div class="right-border"></div>
       </li>
       <li class="footer-item">
-        <a href="cookies-policy.html" class="footer-link">Cookies Policy</a>
+        <a class="footer-link" href="cookies-policy.html" data-footer-link>
+          Cookies Policy
+        </a>
       </li>
     </ul>
   </div>
@@ -1660,6 +1724,7 @@
       <div class="modal-cookies-policy-btns-wrapper">
         <button
           class="modal-cookies-policy-btn btn-accept"
+          data-modal-cookies-policy-btn
           data-modalCookiesAccept
         >
           ACCEPT COOKIES
@@ -1667,6 +1732,7 @@
 
         <button
           class="modal-cookies-policy-btn btn-decline"
+          data-modal-cookies-policy-btn
           data-modalCookiesDecline
         >
           DECLINE COOKIES
