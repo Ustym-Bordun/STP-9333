@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination, Keyboard } from 'swiper/modules';
+import { Pagination, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -7,8 +7,8 @@ let swiperInstance = null;
 
 function initSwiper() {
   if (window.innerWidth < 1200 && !swiperInstance) {
-    swiperInstance = new Swiper('.about-the-game-swiper-one', {
-      modules: [Pagination, Keyboard],
+    swiperInstance = new Swiper('[data-about-the-game-swiper-one]', {
+      modules: [Pagination, Keyboard, Mousewheel],
       wrapperClass: 'about-the-game-list-image',
       slideClass: 'about-the-game-item',
       slideActiveClass: 'about-the-game-swiper-slide-active',
@@ -17,8 +17,11 @@ function initSwiper() {
       loop: true,
       preventClicks: true,
       grabCursor: true,
+      mousewheel: {
+        forceToAxis: true,
+      },
       pagination: {
-        el: '.about-the-game-swiper-pagination',
+        el: '[data-about-the-game-swiper-pagination]',
         clickable: true,
       },
       on: {

@@ -2,7 +2,7 @@ import { customAnimations } from './utils/custom-animations.js';
 
 import { closeModalAndScrollToSection } from './utils/scrollToSection.js';
 
-customAnimations(['.modal-menu-nav-link']);
+customAnimations(['[data-modal-menu-navigation-link]']);
 
 const modalMenuNavigationLinkEls = document.querySelectorAll(
   '[data-modal-menu-navigation-link]'

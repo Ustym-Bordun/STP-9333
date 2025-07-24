@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 
 import { customAnimations } from './utils/custom-animations.js';
 
-customAnimations(['.player-testimonials-swiper-navigation-btn']);
+customAnimations(['[data-player-testimonials-swiper-navigation-btn]']);
 
 let playerTestimonialsSwiperInstance = null;
 
@@ -14,7 +14,7 @@ function initSwiperPlayerTestimonials() {
     playerTestimonialsSwiperInstance.destroy(true, true);
 
   playerTestimonialsSwiperInstance = new Swiper(
-    '.player-testimonials-swiper-one',
+    '[data-player-testimonials-swiper-one]',
     {
       modules: [Pagination, Navigation, Keyboard, Mousewheel],
       wrapperClass: 'player-testimonials-list',
@@ -34,7 +34,7 @@ function initSwiperPlayerTestimonials() {
         onlyInViewport: false,
       },
       pagination: {
-        el: '.player-testimonials-swiper-pagination',
+        el: '[data-player-testimonials-swiper-pagination]',
         clickable: true,
         enabled: true,
       },
@@ -56,8 +56,8 @@ function initSwiperPlayerTestimonials() {
           },
           navigation: {
             enabled: true,
-            nextEl: '.player-testimonials-swiper-next',
-            prevEl: '.player-testimonials-swiper-prev',
+            prevEl: '[data-player-testimonials-swiper-prev]',
+            nextEl: '[data-player-testimonials-swiper-next]',
           },
         },
       },

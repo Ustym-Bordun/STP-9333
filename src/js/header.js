@@ -7,10 +7,10 @@ import {
 import { scrollToSection } from './utils/scrollToSection.js';
 
 customAnimations([
-  '.logo-link',
-  '.open-menu-btn',
-  '.close-menu-btn',
-  '.header-nav-link',
+  '[data-header-logo-link]',
+  '[data-header-open-menu-btn]',
+  '[data-header-close-menu-btn]',
+  '[data-header-navigation-link]',
 ]);
 
 const menuOpenBtnEl = document.querySelector('[data-modalMenuAction="open"]');
