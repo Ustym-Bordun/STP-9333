@@ -79,7 +79,7 @@
     position: absolute;
 
     bottom: 650px;
-    right: -25px;
+    right: 0;
 
     width: 120px;
     height: 174px;
@@ -87,6 +87,9 @@
     background-image: url(/img/about-the-game/desktop/about-the-game-gnom-desktop.png);
     background-repeat: no-repeat;
     background-size: 100px 170px;
+
+    /* background-position-x: calc(100% + 25px); */
+    background-position-x: 100%;
   }
 
   .about-the-game-title {
