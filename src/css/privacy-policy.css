@@ -9,13 +9,6 @@
   gap: 24px;
 }
 
-.link-back {
-  font-size: 20px;
-  line-height: 1.75;
-
-  margin-bottom: 24px;
-}
-
 .arrow-back {
   padding-right: 8px;
 }
@@ -65,10 +58,6 @@
   .privacy-section {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-
-  .link-back {
-    margin-bottom: 40px;
   }
 
   .privacy-main-title {

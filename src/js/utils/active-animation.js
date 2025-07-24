@@ -1,16 +1,16 @@
 export const activeAnimation = ({
   selector,
-  className = 'active',
+  dataName = 'active',
   delay = 300,
 }) => {
   const handler = e => {
     const target = e.target.closest(selector);
     if (!target) return;
 
-    target.classList.add(className);
+    target.dataset[dataName] = '';
 
     setTimeout(() => {
-      target.classList.remove(className);
+      target.removeAttribute(`data-${dataName}`);
     }, delay);
   };
 

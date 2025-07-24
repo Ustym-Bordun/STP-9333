@@ -21,13 +21,13 @@
   transition: transform 300ms ease-in-out, opacity 300ms ease-in-out,
     visibility 300ms ease-in-out;
 }
-.modal-cookies-policy.closed {
+.modal-cookies-policy[data-modal-cookies-closed] {
   transform: translateY(100%);
 
   opacity: 0;
   visibility: hidden;
 }
-.modal-cookies-policy.opened {
+.modal-cookies-policy[data-modal-cookies-opened] {
   transform: translateY(0);
 
   opacity: 1;
@@ -103,11 +103,11 @@
   color: var(--text-light-color);
   background-color: var(--bg-btn-color);
 }
-.modal-cookies-policy-btn.btn-accept.hover,
+.modal-cookies-policy-btn.btn-accept[data-hover],
 .modal-cookies-policy-btn.btn-accept:focus {
   border-color: var(--border-btn-light-color-hover-focus);
 }
-.modal-cookies-policy-btn.btn-accept.active {
+.modal-cookies-policy-btn.btn-accept[data-active] {
   border-color: var(--border-btn-light-color-active);
 }
 
@@ -115,11 +115,11 @@
   color: var(--text-dark-color);
   background-color: var(--bg-btn-color-second);
 }
-.modal-cookies-policy-btn.btn-decline.hover,
+.modal-cookies-policy-btn.btn-decline[data-hover],
 .modal-cookies-policy-btn.btn-decline:focus {
   border-color: var(--border-btn-dark-color-hover-focus);
 }
-.modal-cookies-policy-btn.btn-decline.active {
+.modal-cookies-policy-btn.btn-decline[data-active] {
   border-color: var(--border-btn-dark-color-active);
 }
 
@@ -145,7 +145,6 @@
     flex-direction: row;
     justify-content: center;
 
-    /* gap: 47px; */
     gap: 49px;
   }
 

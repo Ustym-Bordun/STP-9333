@@ -1,6 +1,6 @@
 export const hoverAnimation = ({
   selector,
-  className = 'hover',
+  dataName = 'hover',
   delay = 150,
 }) => {
   const hoverTimeouts = new Map();
@@ -16,7 +16,7 @@ export const hoverAnimation = ({
         hoverTimeouts.delete(target);
       }
 
-      target.classList.add(className);
+      target.dataset[dataName] = '';
     });
 
     document.addEventListener('mouseout', e => {
@@ -24,7 +24,8 @@ export const hoverAnimation = ({
       if (!target) return;
 
       const timeoutId = setTimeout(() => {
-        target.classList.remove(className);
+        target.removeAttribute(`data-${dataName}`);
+
         hoverTimeouts.delete(target); // очищаємо після виконання
       }, delay);
 
@@ -36,11 +37,9 @@ export const hoverAnimation = ({
       const target = e.target.closest(selector);
       if (!target) return;
 
-      target.classList.add(className);
-
-      // target.classList.remove(className);
+      target.dataset[dataName] = '';
       setTimeout(() => {
-        target.classList.remove(className);
+        target.removeAttribute(`data-${dataName}`);
       }, delay);
     });
   }

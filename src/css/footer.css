@@ -31,11 +31,11 @@
   transition: transform 300ms ease-in-out;
 }
 
-.footer-link.hover,
+.footer-link[data-hover],
 .footer-link:focus {
   transform: scale(0.95);
 }
-.footer-link.active {
+.footer-link[data-active] {
   transform: scale(0.9);
 }
 

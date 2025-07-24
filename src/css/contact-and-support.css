@@ -68,11 +68,12 @@
 .contacts-and-support-link {
   transition: transform 300ms ease-in-out;
 }
-.contacts-and-support-link.hover,
+
+.contacts-and-support-link[data-hover],
 .contacts-and-support-link:focus {
   transform: scale(0.95);
 }
-.contacts-and-support-link.active {
+.contacts-and-support-link[data-active] {
   transform: scale(0.9);
 }
 
@@ -99,11 +100,12 @@
   width: 36px;
   height: 36px;
 }
-.contacts-and-support-social-link.hover,
+
+.contacts-and-support-social-link[data-hover],
 .contacts-and-support-social-link:focus {
   transform: scale(0.95);
 }
-.contacts-and-support-social-link.active {
+.contacts-and-support-social-link[data-active] {
   transform: scale(0.9);
 }
 

@@ -12,6 +12,7 @@
 /* @import url('./animations.css'); */
 
 /* Pages style */
+@import url('./info-pages.css');
 @import url('./cookies-policy.css');
 @import url('./privacy-policy.css');
 @import url('./terms-and-conditions.css');

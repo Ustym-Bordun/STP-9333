@@ -22,13 +22,13 @@
     visibility 300ms ease-in-out;
 }
 
-.modal-menu.closed {
+.modal-menu[data-modal-menu-closed] {
   transform: translateX(100%);
   opacity: 0;
   visibility: hidden;
 }
 
-.modal-menu.opened {
+.modal-menu[data-modal-menu-opened] {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
@@ -106,12 +106,12 @@ body[data-bodyMenu='opened'] {
   text-shadow: var(--text-shadow);
 }
 
-.modal-menu-nav-link.hover,
+.modal-menu-nav-link[data-hover],
 .modal-menu-nav-link:focus {
   /* transform: scale(0.95); */
   border-color: var(--border-btn-modal-menu-color-hover-focus);
 }
-.modal-menu-nav-link.active {
+.modal-menu-nav-link[data-active] {
   /* transform: scale(0.9); */
   border-color: var(--border-btn-modal-menu-color-active);
 }

@@ -5,8 +5,8 @@ export const openModalCookies = (
 ) => {
   const { delayPointerEventsAll: delay = 300 } = properties;
 
-  modalCookiesEl.classList.remove('closed');
-  modalCookiesEl.classList.add('opened');
+  modalCookiesEl.removeAttribute(`data-modal-cookies-closed`);
+  modalCookiesEl.dataset.modalCookiesOpened = '';
 
   setTimeout(() => {
     modalCookiesEl.style.pointerEvents = 'all';
@@ -14,8 +14,8 @@ export const openModalCookies = (
 };
 
 export const closeModalCookies = () => {
-  modalCookiesEl.classList.remove('opened');
-  modalCookiesEl.classList.add('closed');
+  modalCookiesEl.removeAttribute(`data-modal-cookies-opened`);
+  modalCookiesEl.dataset.modalCookiesClosed = '';
 
   modalCookiesEl.style.pointerEvents = 'none';
 };

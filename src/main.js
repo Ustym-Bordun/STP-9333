@@ -14,3 +14,9 @@ import './js/footer';
 
 import './js/modal-menu';
 import './js/modal-cookies-policy';
+
+import './js/info-pages';
+
+import './js/cookies-policy';
+import './js/privacy-policy';
+import './js/terms-and-conditions';
