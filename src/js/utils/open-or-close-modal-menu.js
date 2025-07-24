@@ -32,8 +32,8 @@ export const openModalMenu = (properties = { delayPointerEventsAll: 300 }) => {
 
   bodyEl.dataset.bodymenu = 'opened';
 
-  menuModalEl.classList.remove('closed');
-  menuModalEl.classList.add('opened');
+  menuModalEl.removeAttribute(`data-modal-menu-closed`);
+  menuModalEl.dataset.modalMenuOpened = '';
 
   addRightPadding();
 
@@ -44,8 +44,8 @@ export const openModalMenu = (properties = { delayPointerEventsAll: 300 }) => {
 export const closeModalMenu = () => {
   bodyEl.dataset.bodymenu = 'closed';
 
-  menuModalEl.classList.remove('opened');
-  menuModalEl.classList.add('closed');
+  menuModalEl.removeAttribute(`data-modal-menu-opened`);
+  menuModalEl.dataset.modalMenuClosed = '';
 
   removeRightPadding();
 

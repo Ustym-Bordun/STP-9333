@@ -20,11 +20,11 @@
 
   transition: transform 300ms ease-in-out;
 }
-.logo-link.hover,
+.logo-link[data-hover],
 .logo-link:focus {
   transform: scale(0.95);
 }
-.logo-link.active {
+.logo-link[data-active] {
   transform: scale(0.9);
 }
 
@@ -41,14 +41,14 @@ body[data-bodyMenu='closed'] .close-menu-btn {
 
   transition: transform 300ms ease-in-out;
 }
-.open-menu-btn.hover,
+.open-menu-btn[data-hover],
 .open-menu-btn:focus,
-.close-menu-btn.hover,
+.close-menu-btn[data-hover],
 .close-menu-btn:focus {
   transform: scale(0.95);
 }
-.open-menu-btn.active,
-.close-menu-btn.active {
+.open-menu-btn[data-active],
+.close-menu-btn[data-active] {
   transform: scale(0.9);
 }
 
@@ -101,12 +101,11 @@ body[data-bodyMenu='closed'] .close-menu-btn {
 
     transition: background-color 300ms ease-in-out;
   }
-
-  .header-nav-link.hover,
+  .header-nav-link[data-hover],
   .header-nav-link:focus {
     background-color: var(--bg-header-nav-link-color-hover-focus);
   }
-  .header-nav-link.active {
+  .header-nav-link[data-active] {
     background: var(--bg-header-nav-link-color-active);
   }
 

@@ -143,11 +143,11 @@
     transition: transform 300ms ease-in-out;
   }
 
-  .player-testimonials-swiper-navigation-btn.hover,
+  .player-testimonials-swiper-navigation-btn[data-hover],
   .player-testimonials-swiper-navigation-btn:focus {
     transform: scale(0.95);
   }
-  .player-testimonials-swiper-navigation-btn.active {
+  .player-testimonials-swiper-navigation-btn[data-active] {
     transform: scale(0.9);
   }
 

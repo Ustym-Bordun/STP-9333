@@ -126,11 +126,11 @@
     transition: transform 300ms ease-in-out;
   }
 
-  .key-features-swiper-navigation-btn.hover,
+  .key-features-swiper-navigation-btn[data-hover],
   .key-features-swiper-navigation-btn:focus {
     transform: scale(0.95);
   }
-  .key-features-swiper-navigation-btn.active {
+  .key-features-swiper-navigation-btn[data-active] {
     transform: scale(0.9);
   }
 

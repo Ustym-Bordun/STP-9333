@@ -134,11 +134,11 @@
     transition: transform 300ms ease-in-out;
   }
 
-  .characters-swiper-navigation-btn.hover,
+  .characters-swiper-navigation-btn[data-hover],
   .characters-swiper-navigation-btn:focus {
     transform: scale(0.95);
   }
-  .characters-swiper-navigation-btn.active {
+  .characters-swiper-navigation-btn[data-active] {
     transform: scale(0.9);
   }
 

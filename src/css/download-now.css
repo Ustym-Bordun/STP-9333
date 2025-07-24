@@ -93,13 +93,13 @@
   color: var(--text-light-color);
 }
 
-.download-now-google-play-link.hover,
+.download-now-google-play-link[data-hover],
 .download-now-google-play-link:focus {
   /* border-color: var(--border-btn-light-color-hover-focus); */
 
   border-color: var(--border-btn-dark-color-hover-focus);
 }
-.download-now-google-play-link.active {
+.download-now-google-play-link[data-active] {
   /* border-color: var(--border-btn-light-color-active); */
 
   border-color: var(--border-btn-dark-color-active);
